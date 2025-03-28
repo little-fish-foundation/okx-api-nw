@@ -1,6 +1,6 @@
 {
   "name": "okx-api-nw",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Complete & robust Node.js SDK for OKX's REST APIs and WebSockets, with TypeScript & end-to-end tests",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
