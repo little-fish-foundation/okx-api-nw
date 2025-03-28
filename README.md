@@ -117,3 +117,7 @@ Build a bundle using webpack:
 The bundle can be found in `dist/`. Altough usage should be largely consistent, smaller differences will exist. Documentation is still TODO.
 
 ---
+
+npm login --registry=https://registry.npmjs.org/
+
+npm publish --registry=https://registry.npmjs.org/
