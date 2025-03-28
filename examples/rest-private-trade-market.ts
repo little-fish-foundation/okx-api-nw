@@ -1,7 +1,7 @@
 import { RestClient, OrderRequest } from '../src/index';
 
 // or
-// import { RestClient, OrderRequest } from 'okx-api';
+// import { RestClient, OrderRequest } from 'okx-api-nw';
 
 // read from environmental variables
 const API_KEY = process.env.API_KEY_COM;

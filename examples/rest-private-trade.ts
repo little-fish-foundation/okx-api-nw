@@ -2,7 +2,7 @@ import { RestClient } from '../src/index';
 import { OrderRequest } from '../src/types/rest';
 
 // or
-// import { SpotClient } from 'okx-api';
+// import { SpotClient } from 'okx-api-nw';
 
 // read from environmental variables
 const API_KEY = process.env.API_KEY_COM;

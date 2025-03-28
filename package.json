@@ -1,6 +1,6 @@
 {
-  "name": "okx-api",
-  "version": "2.0.0",
+  "name": "okx-api-nw",
+  "version": "1.0.0",
   "description": "Complete & robust Node.js SDK for OKX's REST APIs and WebSockets, with TypeScript & end-to-end tests",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,7 +20,7 @@
     "prepublish": "npm run build:clean",
     "betapublish": "npm publish --tag beta"
   },
-  "author": "Tiago Siebler (https://github.com/tiagosiebler)",
+  "author": "https://github.com/little-fish-foundation/okx-api-nw",
   "contributors": [],
   "dependencies": {
     "axios": "^1.6.7",
@@ -65,17 +65,10 @@
     "bitcoin",
     "best"
   ],
-  "funding": {
-    "type": "individual",
-    "url": "https://github.com/sponsors/tiagosiebler"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiagosiebler/okx-api"
+    "url": "https://github.com/little-fish-foundation/okx-api-nw"
   },
-  "bugs": {
-    "url": "https://github.com/tiagosiebler/okx-api/issues"
-  },
-  "homepage": "https://github.com/tiagosiebler/okx-api#readme"
+  "homepage": "https://github.com/little-fish-foundation/okx-api-nw#readme"
 }

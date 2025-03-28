@@ -2,10 +2,10 @@
 import { WebsocketClient, DefaultLogger } from '../src';
 
 // or use the module installed via `npm install okx-api`:
-// import { WebsocketClient, DefaultLogger } from 'okx-api';
+// import { WebsocketClient, DefaultLogger } from 'okx-api-nw';
 
 // or if you're not using typescript (e.g. pure nodejs), change the "import" to "require":
-// const { WebsocketClient, DefaultLogger } = require('okx-api');
+// const { WebsocketClient, DefaultLogger } = require('okx-api-nw');
 
 // Optional: Inject a custom logger.
 // This example overrides the default logger to also log "silly" (super verbose) messages, which are disabled by default

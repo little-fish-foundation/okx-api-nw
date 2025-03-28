@@ -1,62 +1,11 @@
 # Node.js & Typescript OKX (OKEX) API & WebSocket SDK
 
-[![E2E Tests](https://github.com/tiagosiebler/okx-api/actions/workflows/e2etest.yml/badge.svg?branch=master)](https://github.com/tiagosiebler/okx-api/actions/workflows/e2etest.yml) [![npm downloads](https://img.shields.io/npm/dt/okx-api)][1] [![npm version](https://img.shields.io/npm/v/okx-api)][1] [![npm size](https://img.shields.io/bundlephobia/min/okx-api/latest)][1] [![last commit](https://img.shields.io/github/last-commit/tiagosiebler/okx-api)][1] [![CodeFactor](https://www.codefactor.io/repository/github/tiagosiebler/okx-api/badge)](https://www.codefactor.io/repository/github/tiagosiebler/okx-api)
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/okx-api">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/tiagosiebler/okx-api/blob/master/docs/images/logoDarkMode2.svg?raw=true#gh-dark-mode-only">
-      <img alt="SDK Logo" src="https://github.com/tiagosiebler/okx-api/blob/master/docs/images/logoBrightMode2.svg?raw=true#gh-light-mode-only">
-    </picture>
-  </a>
-</p>
-
-[1]: https://www.npmjs.com/package/okx-api
-
-Complete, updated & performant Node.js SDK for the OKX(OKEX) APIs and WebSockets:
-
-- Complete integration with all OKX APIs, including the v5 APIs.
-- TypeScript support (with type declarations for most API requests & responses).
-- Over 100 end-to-end tests making real API calls & WebSocket connections, validating any changes before they reach npm.
-- Robust WebSocket integration
-  - Configurable connection heartbeats (automatically detect failing connections).
-  - Automatic reconnect then resubscribe workflows.
-  - Automatic authentication and heartbeat handling.
-- Browser support (via webpack bundle - see "Browser Usage" below).
-
 ## Installation
 
 ```bash
-npm install okx-api
+npm install okx-api-nw
 ```
-
-## Issues & Discussion
-
-- Issues? Check the [issues tab](https://github.com/tiagosiebler/okx-api/issues).
-- Discuss & collaborate with other node devs? Join our [Node.js Algo Traders](https://t.me/nodetraders) engineering community on telegram.
-- Follow our announcement channel for real-time updates on [X/Twitter](https://x.com/QuantSDKs)
-
-<!-- template_related_projects -->
-
-## Related projects
-
-Check out my related JavaScript/TypeScript/Node.js projects:
-
-- Try my REST API & WebSocket SDKs:
-  - [Bybit-api Node.js SDK](https://www.npmjs.com/package/bybit-api)
-  - [Okx-api Node.js SDK](https://www.npmjs.com/package/okx-api)
-  - [Binance Node.js SDK](https://www.npmjs.com/package/binance)
-  - [Gateio-api Node.js SDK](https://www.npmjs.com/package/gateio-api)
-  - [Bitget-api Node.js SDK](https://www.npmjs.com/package/bitget-api)
-  - [Kucoin-api Node.js SDK](https://www.npmjs.com/package/kucoin-api)
-  - [Coinbase-api Node.js SDK](https://www.npmjs.com/package/coinbase-api)
-  - [Bitmart-api Node.js SDK](https://www.npmjs.com/package/bitmart-api)
-- Try my misc utilities:
-  - [OrderBooks Node.js](https://www.npmjs.com/package/orderbooks)
-  - [Crypto Exchange Account State Cache](https://www.npmjs.com/package/accountstate)
-- Check out my examples:
-  - [awesome-crypto-examples Node.js](https://github.com/tiagosiebler/awesome-crypto-examples)
-  <!-- template_related_projects_end -->
+![alt text](image.png)
 
 ## Documentation
 
@@ -65,17 +14,7 @@ Most methods accept JS objects. These can be populated using parameters specifie
 - [RestClient](src/rest-client.ts)
 - [OKX API Documentation](https://www.okx.com/docs-v5/en/#rest-api)
 - [REST Endpoint Function List](./docs/endpointFunctionList.md)
-- [TSDoc Documentation (generated using typedoc via npm module)](https://tsdocs.dev/docs/okx-api)
-
-## Contributions & Thanks
-
-Support my efforts to make algo trading accessible to all - register with my referral links:
-
-- [Bybit](https://www.bybit.com/en-US/register?affiliate_id=9410&language=en-US&group_id=0&group_type=1)
-- [Binance](https://www.binance.com/en/register?ref=20983262)
-- [OKX](https://www.okx.com/join/18504944)
-
-For more ways to give thanks & support my efforts, visit [Contributions & Thanks](https://github.com/tiagosiebler/awesome-crypto-examples/wiki/Contributions-&-Thanks)!
+- [TSDoc Documentation (generated using typedoc via npm module)](https://github.com/little-fish-foundation/okx-api-nw)
 
 ## Structure
 
@@ -87,12 +26,6 @@ This project uses typescript. Resources are stored in 3 key structures:
 - [examples](./examples) - some implementation examples & demonstrations. Contributions are welcome!
 
 ---
-
-# Usage
-
-Create API credentials at okx
-
-- [OKX my-api](https://www.okx.com/account/my-api)
 
 ## REST Client
 
@@ -127,7 +60,7 @@ This connector includes a high-performance node.js & typescript websocket client
   - These examples are written in TypeScript, so can be executed with ts-node for easy testing:
     `ts-node examples/ws-private.ts`
   - Or convert them to javascript:
-    - Change the `import { ... } from 'okx-api'` to `const { ... } = require('okx-api');`
+    - Change the `import { ... } from 'okx-api-nw'` to `const { ... } = require('okx-api-nw');`
     - Rename the file to `ws-private.js`
     - And execute with node: `node examples/ws-private.js`
 
@@ -184,36 +117,3 @@ Build a bundle using webpack:
 The bundle can be found in `dist/`. Altough usage should be largely consistent, smaller differences will exist. Documentation is still TODO.
 
 ---
-
-<!-- template_contributions -->
-
-### Contributions & Thanks
-
-Have my projects helped you? Share the love, there are many ways you can show your thanks:
-
-- Star & share my projects.
-- Are my projects useful? Sponsor me on Github and support my effort to maintain & improve them: https://github.com/sponsors/tiagosiebler
-- Have an interesting project? Get in touch & invite me to it.
-- Or buy me all the coffee:
-  - ETH(ERC20): `0xA3Bda8BecaB4DCdA539Dc16F9C54a592553Be06C` <!-- metamask -->
-
-<!---
-old ones:
-  - BTC: `1C6GWZL1XW3jrjpPTS863XtZiXL1aTK7Jk`
-  - BTC(SegWit): `bc1ql64wr9z3khp2gy7dqlmqw7cp6h0lcusz0zjtls`
-  - ETH(ERC20): `0xe0bbbc805e0e83341fadc210d6202f4022e50992`
-  - USDT(TRC20): `TA18VUywcNEM9ahh3TTWF3sFpt9rkLnnQa
--->
-<!-- template_contributions_end -->
-
-### Contributions & Pull Requests
-
-Contributions are encouraged, I will review any incoming pull requests. See the issues tab for todo items.
-
-<!-- template_star_history -->
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=tiagosiebler/bybit-api,tiagosiebler/okx-api,tiagosiebler/binance,tiagosiebler/bitget-api,tiagosiebler/bitmart-api,tiagosiebler/gateio-api,tiagosiebler/kucoin-api,tiagosiebler/coinbase-api,tiagosiebler/orderbooks,tiagosiebler/accountstate,tiagosiebler/awesome-crypto-examples&type=Date)](https://star-history.com/#tiagosiebler/bybit-api&tiagosiebler/okx-api&tiagosiebler/binance&tiagosiebler/bitget-api&tiagosiebler/bitmart-api&tiagosiebler/gateio-api&tiagosiebler/kucoin-api&tiagosiebler/coinbase-api&tiagosiebler/orderbooks&tiagosiebler/accountstate&tiagosiebler/awesome-crypto-examples&Date)
-
-<!-- template_star_history_end -->

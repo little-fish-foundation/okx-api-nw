@@ -1,7 +1,7 @@
 import { RestClient } from '../src/index';
 
 // or
-// import { RestClient } from 'okx-api';
+// import { RestClient } from 'okx-api-nw';
 
 const client = new RestClient();
 
