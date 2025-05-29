@@ -1,3 +1,11 @@
+/*
+ * @Author: Nw1996
+ * @Date: 2025-03-28 16:10:53
+ * @LastEditors: Nw1996
+ * @LastEditTime: 2025-05-29 14:28:42
+ * @Description: 
+ * @FilePath: /okx-api-nw/src/util/requestUtils.ts
+ */
 import { Method } from 'axios';
 
 import { APIMarket, RestClientOptions } from '../types';
@@ -31,7 +39,7 @@ export function serializeParams(
   return queryString ? '?' + queryString : queryString;
 }
 export const programKey = 'tag';
-export const programId = '159881cb7207BCDE';
+export const programId = 'ac22216c5f05BCDE';
 
 export function getRestBaseUrl(
   market: APIMarket,
